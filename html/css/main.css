@@ -1,4 +1,4 @@
-div,h1,h3,ul,li,html,body{
+div,h1,h3,h2,ul,li,html,body{
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,9 @@ li{
     display: inline-block;;
 }
 
+a{
+    text-decoration:none;
+}
 
 #banner{
     background-image: url("../imgs/bg.jpg");
@@ -85,18 +88,93 @@ content start
 
 #cont-left{
     width: 847px;
-    height: 500px;
     padding: 15px;
     float: left;
 }
 
+.single:first-child{
+    width: 100%;
+}
+
+.single{
+    padding: 10px 5px;
+    width: 48%;
+    float: left;
+}
+
+.ownerinfo span{
+    padding-right: 8px;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.single h2{
+    color: #000;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 3px;
+
+}
 
 
+.single-cat{
+    text-decoration: none;
+    color: #d08c22;
+    opacity: 0.7;
+    padding-right: 8px;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 8px auto;
+}
+
+.single-desc{
+    color: #404040;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.readmore{
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid;
+    color: #d08c22;
+    display: inline-block;
+}
+
+#navigation{
+    position: relative;
+    float: left;
+    left: 50%;
+}
+.navigation{
+    float: left;
+    position: relative;
+    right:50%;
+}
+
+.navigation a{
+    display: inline-block;
+    float: left;
+    padding: 5px 10px;
+    border: 1px solid #d08c22;
+    border-radius: 0;
+    margin: 3px;
+}
+
+.navigation:after{
+    content:"";
+    display:table;
+    clear:both;
+}
 
 #cont-right {
     width: 252px;
     height: 500px;
     padding: 5px;
-    background: #333333;
+    background: darkkhaki;
     float: left;
 }

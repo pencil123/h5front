@@ -7,7 +7,6 @@ body{
 }
 li{
     list-style-type: none;
-    display: inline-block;;
 }
 
 a{
@@ -59,6 +58,7 @@ start nav
     margin: 0 auto;
 }
 .nav  li{
+    display: inline-block;;
     height: 50px;
     line-height: 50px;
     width: 120px;
@@ -179,11 +179,16 @@ content start
 
 #cont-right {
     width: 30%;
-    height: 500px;
     padding: 5px 10px;
     background: white;
     float: left;
     box-sizing: border-box;
+}
+
+#cont-right:after{
+    content:"";
+    display:table;
+    clear:both;
 }
 
 #search{
@@ -250,4 +255,113 @@ content start
 
 #calendar_table  td {
     padding: 7px;
+}
+
+/*calendar end
+category start*/
+#category,#lable,#links{
+    box-sizing: border-box;
+    padding: 20px 10px 10px;
+    width: 95%;
+}
+
+.widget-title{
+    margin: 3px 10px;
+}
+
+.widget-title-content{
+    height: 36px;
+    line-height: 36px;
+}
+.line{
+    display: inline-block;
+    width: 100px;
+    border-top: 1px solid #e3e3e3;
+    vertical-align: 5px;
+}
+
+#cate-content{
+    text-align: left;
+    padding-left: 15px;
+    color: #d08c22;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#cate-content > ul > li{
+    border-bottom: none;
+}
+
+#cate-content li{
+    margin: 4px 0px 0px;
+    padding: 0px 0px 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#cate-content li > ul{
+    padding-left: 15px;
+}
+
+#tagcloud{
+    padding: 5px 15px;
+}
+
+#tagcloud:before{
+    content:"";
+    display:table;
+}
+#tagcloud:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+#tagcloud > a{
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #d08c22;
+    padding: 3px 6px;
+    margin: 3px;
+    font-size: 15px;
+    color: #d08c22;
+    line-height: 1.6;
+}
+
+#links-cont{
+    padding: 5px 15px;
+}
+#links-cont span{
+    color: #d08c22;
+    display: block;
+    text-align: left;
+    line-height: 25px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #dddddd;
+}
+#footer{
+    box-sizing: border-box;
+    border-top: 1px solid #1e1e1e;
+    background: #1e1e1e;
+}
+.footer{
+    box-sizing: border-box;
+    text-align: center;
+    width: 800px;
+    margin: 20px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    color: white;
+}
+
+#footer:before{
+    content:"";
+    display:table;
+}
+#footer:after{
+    content:"";
+    display:table;
+    clear:both;
 }
